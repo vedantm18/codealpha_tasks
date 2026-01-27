@@ -1,13 +1,14 @@
-# Ignore compiled Java files
+# Java compiled files
 *.class
 
-# Maven / Java build folders
-target/
-
-# Accidental folders
+# JVM / temp
 dir/
 java/
 
-# OS files
+# Logs
+*.log
+
+# OS
 .DS_Store
 Thumbs.db
+
