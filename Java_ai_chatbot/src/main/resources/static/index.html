@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - Intelligent Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>🤖 AI Chatbot</h1>
+                <p>Your Intelligent Assistant with NLP & ML</p>
+            </div>
+            <button class="stats-btn" onclick="showStats()">📊 Stats</button>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <strong>Bot:</strong>
+                    <p>Hello! 👋 I'm your AI assistant powered by Natural Language Processing and Machine Learning.</p>
+                    <p>I can help you with:</p>
+                    <ul>
+                        <li>💻 Programming questions (Java, Python, etc.)</li>
+                        <li>🤖 AI & Machine Learning concepts</li>
+                        <li>🧮 Math calculations</li>
+                        <li>⏰ Time and date information</li>
+                        <li>💬 General conversation</li>
+                    </ul>
+                    <p>How can I assist you today?</p>
+                </div>
+                <span class="timestamp" id="welcomeTime"></span>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Type your message here..." 
+                onkeypress="handleKeyPress(event)"
+            >
+            <button onclick="sendMessage()" id="sendBtn">
+                <span>Send</span> 
+                <span class="arrow">➤</span>
+            </button>
+        </div>
+
+        <div class="quick-actions">
+            <button onclick="quickMessage('Hello')">👋 Hello</button>
+            <button onclick="quickMessage('Help me')">❓ Help</button>
+            <button onclick="quickMessage('Calculate 25 + 17')">🧮 Math</button>
+            <button onclick="quickMessage('What time is it?')">⏰ Time</button>
+        </div>
+    </div>
+
+    <div id="statsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeStats()">&times;</span>
+            <h2>📊 Conversation Statistics</h2>
+            <div id="statsContent">Loading...</div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
