@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  background: #55a6f2;
+}
+
+.chat-container {
+  width: 500px;
+  margin: 50px auto;
+  background: #f9d0d0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#chatHistory {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #831313;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.user {
+  color: blue;
+}
+
+.bot {
+  color: rgb(24, 26, 131);
+}
+
+input {
+  width: 75%;
+  padding: 10px;
+}
+
+button {
+   background:grey
+  padding: 10px;
+}
